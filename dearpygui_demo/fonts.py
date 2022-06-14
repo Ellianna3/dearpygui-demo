@@ -5,8 +5,10 @@ dpg.create_context()
 # add a font registry
 with dpg.font_registry():
     # first argument ids the path to the .ttf or .otf file
-    default_font = dpg.add_font("NotoSerifCJKjp-Medium.otf", 20)
-    second_font = dpg.add_font("NotoSerifCJKjp-Medium.otf", 10)
+    default_font = dpg.add_font("Noto_Sans\NotoSans-Medium.ttf", 20)
+    second_font = dpg.add_font("Noto_Sans\NotoSans-MediumItalic.ttf", 10)
+
+
 
 with dpg.window(label="Font Example", height=200, width=200):
     dpg.add_button(label="Default font")
